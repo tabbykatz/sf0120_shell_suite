@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# test to see if the int you put in after exit even does anything
+
+command="exit 47"
+
+# clean up
+stop_shell
+
+# run command
+`echo $command | $SHELL 2> /dev/null ; echo $? > $OUTPUTFILE` &
+
+# wait a little bit
+$SLEEP $SLEEPSECONDS
+
+# check the result
+nmatch=`cat $OUTPUTFILE | grep -c "47"`
+if [ $nmatch -eq 1 ]; then
+	   print_ok
+else
+	   print_ko
+fi
+
+# clean up
+stop_shell
