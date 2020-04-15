@@ -12,3 +12,9 @@ Open the file `config` and update the variable `SHELL` with your shell.
 ## Run
 
 Usage `./check_simple_shell.bash`
+
+## Add Your Name to AUTHORS like this:
+
+after you have pushed a contribution to this repo, run the file
+"add_to_authors.sh" and push AUTHORS to master. Your name will be added to the
+list.
