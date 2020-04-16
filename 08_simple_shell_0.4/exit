@@ -19,7 +19,7 @@ $ECHO "$command" | $SHELL > $OUTPUTFILE 2> $ERROROUTPUTFILE &
 $SLEEP $SLEEPSECONDS
 
 # copy saved output for debugging
-cat $OUTPUTFILE > "$SAVEOUTPUTDIR/$save_file"
+cat $OUTPUTFILE > "/tmp/$save_file"
 
 # check the result
 res=`$CAT "$OUTPUTFILE" | wc -c`
