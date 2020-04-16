@@ -1,4 +1,10 @@
 # Simple Shell, Checks
+Hello SF0120:</br>
+
+Please add tests by cloning this repo, making a dir by the same naming
+conventions I am using (task no, simple shell, task name) or, if your test
+falls under a task that already has a repo, creating your test script in an
+existing directory. Make sure your script is executable.</br>
 
 There will be no checks released before the deadline. We **strongly** encourage the whole class to work together and create a suite of checks covering both regular tests and edged cases for each task.
 
