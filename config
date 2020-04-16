@@ -5,6 +5,7 @@ R=$RANDOM
 OUTPUTFILE="checker_output_$R"
 ERROROUTPUTFILE="checker_error_output_$R"
 SHELL="/home/vagrant/simple_shell/a.out"
+SPATH="/home/vagrant/simple_shell/"
 #SHELL="/bin/sh"
 SLEEP=`which sleep`
 SLEEPSECONDS=1

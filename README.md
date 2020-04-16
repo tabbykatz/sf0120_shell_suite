@@ -13,7 +13,9 @@ Fork this repo and add more checks to help you and the rest of the class build t
 
 ## Configuration
 
-Open the file `config` and update the variable `SHELL` with your shell.
+Open the file `config` and update the variables`SHELL` and `SPATH` with your shell.
+SHELL="/home/vagrant/simple_shell/a.out"                                       
+SPATH="/home/vagrant/simple_shell/"  
 
 ## Run
 

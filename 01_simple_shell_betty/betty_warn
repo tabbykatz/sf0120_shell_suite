@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# test for betty errors
+
+# clean up
+stop_shell
+
+# create a pseudo random file
+# run command
+betty $SPATH*.c > $OUTPUTFILE
+betty $SPATH*.h >> $OUTPUTFILE
+
+# wait a little bit
+$SLEEP $SLEEPSECONDS
+
+# check the result
+nmatch=`cat $OUTPUTFILE | grep -c "WARNING"`
+if [ $nmatch -gt 0 ]; then
+	   print_ko
+else
+	   print_ok
+fi
+
+# clean up
+stop_shell
