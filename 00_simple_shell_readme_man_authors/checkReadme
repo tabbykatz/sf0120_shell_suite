@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# look for README
+FILE=$SPATH/README.md
+if [ -f "$FILE" ]; then
+	print_ok
+else 
+	print_ko
+fi
+
